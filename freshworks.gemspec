@@ -6,7 +6,7 @@ require 'freshworks/version'
 Gem::Specification.new do |spec|
   spec.name          = 'freshworks'
   spec.version       = Freshworks::VERSION
-  spec.authors       = ['Ellen Cornelius', 'Nowai Matthew']
+  spec.authors       = ['Ellen Cornelius', 'Nowai Matthew', 'Andrew Brown', 'Robert Ingrum']
   spec.email         = 'dev@bonus.ly'
   spec.summary       = 'Wrapper for Freshworks API'
   spec.description   = 'Freshworks is customer success software used to reduce churn and increase B2B SaaS adoption.'
@@ -20,7 +20,7 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency             'httparty',             '~> 0.13'
   spec.add_development_dependency 'bundler',              '> 1.11'
-  spec.add_development_dependency 'rake',                 '~> 10.0'
+  spec.add_development_dependency 'rake',                 '~> 12.3.3'
   spec.add_development_dependency 'rspec'
   spec.add_development_dependency 'rack',                 '>= 2.0.8'
   spec.add_development_dependency 'rspec-rails'
