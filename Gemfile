@@ -1,4 +1,4 @@
 source 'https://rubygems.org'
 
-# Specify your gem's dependencies in natero.gemspec
+# Specify your gem's dependencies in freshworks.gemspec
 gemspec

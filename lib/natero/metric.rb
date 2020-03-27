@@ -1,10 +1,10 @@
-class Natero::Metric < Natero::Base
+class Freshworks::Metric < Freshworks::Base
   def self.retrieve(name)
     get([name])
   end
 
   def self.bulk_insert_modify(metrics)
-    post([], json_data(Natero.to_records_json(metrics)))
+    post([], json_data(Freshworks.to_records_json(metrics)))
   end
 
   def self.modify(name, metric)

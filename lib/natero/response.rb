@@ -1,4 +1,4 @@
-class Natero::Response
+class Freshworks::Response
   attr_reader :parsed_response, :code
 
   def initialize(raw_response)

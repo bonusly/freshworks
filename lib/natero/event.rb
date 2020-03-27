@@ -1,5 +1,5 @@
-class Natero::Event < Natero::Base
-  BASE_URI = 'https://events.natero.com'
+class Freshworks::Event < Freshworks::Base
+  BASE_URI = 'https://events-us.freshsuccess.com'
   VERSION_URI = '/v1'
 
   REQUIRED_PARAMS = %w{
@@ -38,11 +38,11 @@ class Natero::Event < Natero::Base
   end
 
   def self.endpoint_path
-    [Natero.configuration.event_auth_key, Natero.configuration.event_api_key]
+    [Freshworks.configuration.event_auth_key, Freshworks.configuration.event_api_key]
   end
 
   def self.endpoint(*params)
     params = [endpoint_path, params].flatten.compact.map(&:to_s)
-    Natero.full_endpoint_uri(BASE_URI, VERSION_URI, params)
+    Freshworks.full_endpoint_uri(BASE_URI, VERSION_URI, params)
   end
 end

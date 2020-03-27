@@ -1,6 +1,6 @@
 require 'httparty'
 
-class Natero::RequestHelper
+class Freshworks::RequestHelper
   def get(path_params=[], data={})
     request(:get, path_params, data)
   end
@@ -22,7 +22,7 @@ class Natero::RequestHelper
   end
 
   def parse_response(raw_response)
-    Natero::Response.new(raw_response)
+    Freshworks::Response.new(raw_response)
   end
 
   def initialize(model)

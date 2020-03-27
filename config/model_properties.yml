@@ -1,10 +1,10 @@
 ---
-Natero::Base:
+Freshworks::Base:
   source: ~
   properties:
 
-Natero::Account:
-  source: http://apidocs.natero.com/apidoc.html#Accounts
+Freshworks::Account:
+  source: http://apidocs.freshworks.com/apidoc.html#Accounts
   properties:
   - account_id
   - name
@@ -45,8 +45,8 @@ Natero::Account:
   - stage_history
   - nps_history
 
-Natero::Event:
-  source: http://apidocs.natero.com/restapi.html
+Freshworks::Event:
+  source: http://apidocs.freshworks.com/restapi.html
   properties:
   - account_id
   - action
@@ -61,8 +61,8 @@ Natero::Event:
   - total
   - user_id
 
-Natero::Metric:
-  source: http://apidocs.natero.com/apidoc.html#Custom%20Metrics
+Freshworks::Metric:
+  source: http://apidocs.freshworks.com/apidoc.html#Custom%20Metrics
   properties:
   - account_id
   - name
@@ -70,8 +70,8 @@ Natero::Metric:
   - direction
   - page
 
-Natero::User:
-  source: http://apidocs.natero.com/apidoc.html#Accounts%20Product%20Users
+Freshworks::User:
+  source: http://apidocs.freshworks.com/apidoc.html#Accounts%20Product%20Users
   properties:
   - user_id
   - account_id

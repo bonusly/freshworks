@@ -1,10 +1,10 @@
 require 'active_support'
 require 'active_support/core_ext'
 
-class Natero::Base
+class Freshworks::Base
   include Serializable
 
-  BASE_URI = 'https://api.natero.com'
+  BASE_URI = 'https://api-us.freshsuccess.com'
   VERSION_URI = '/api/v2'
 
   REQUIRED_PARAMS = []
@@ -16,8 +16,8 @@ class Natero::Base
   end
 
   def self.endpoint(*params)
-    params = [endpoint_path, params, Natero.api_key_uri].flatten.compact.map(&:to_s)
-    Natero.full_endpoint_uri(BASE_URI, VERSION_URI, params)
+    params = [endpoint_path, params, Freshworks.api_key_uri].flatten.compact.map(&:to_s)
+    Freshworks.full_endpoint_uri(BASE_URI, VERSION_URI, params)
   end
 
   def self.endpoint_path
@@ -35,7 +35,7 @@ class Natero::Base
   end
 
   def self.request_helper
-    Natero::RequestHelper.new(self)
+    Freshworks::RequestHelper.new(self)
   end
 
   def initialize(params, raw_response = nil)
@@ -68,6 +68,6 @@ class Natero::Base
   end
 
   def model_config
-    YAML::load(File.read("#{Natero.gem_root}/config/model_properties.yml"))[self.class.name.to_s].with_indifferent_access
+    YAML::load(File.read("#{Freshworks.gem_root}/config/model_properties.yml"))[self.class.name.to_s].with_indifferent_access
   end
 end

@@ -1,25 +1,25 @@
-[api-docs]: https://apidocs.natero.com/
+[api-docs]: https://apidocs.freshworks.com/
 [free-sw]:  https://www.fsf.org/licensing/essays/free-sw.html
-[issues]:   https://github.com/bonusly/natero/issues
+[issues]:   https://github.com/bonusly/freshworks/issues
 [fork]:     http://help.github.com/fork-a-repo/
 [branch]:   http://learn.github.com/p/branching.html
 [pr]:       http://help.github.com/send-pull-requests/
 
-# Natero Gem
-A Ruby interface for the [Natero Public API][api-docs].
+# Freshworks Gem
+A Ruby interface for the [Freshworks Public API][api-docs].
 
 ## Installation
 ```Bash
-gem install natero
+gem install freshworks
 ```
 
 ## Examples
 Significant functionality is covered with this gem, but some basic functionality is covered below.
-If you're interested in learning more, it's probably easiest to explore the specs in `/spec/natero`.
+If you're interested in learning more, it's probably easiest to explore the specs in `/spec/freshworks`.
 
 Set up your keys:
 ```Ruby
-Natero.configure do |c|
+Freshworks.configure do |c|
   c.account_api_key = 'ACCOUNT_API_KEY'
   c.event_api_key   = 'EVENT_API_KEY'
   c.event_auth_key  = 'EVENT_AUTH_KEY'
@@ -28,28 +28,28 @@ end
 
 Retrieve all accounts:
 ```Ruby
-Natero::Account.retrieve_all
+Freshworks::Account.retrieve_all
 ```
 
 Retrieve a specific account:
 ```Ruby
-Natero::Account.retrieve('ACCOUNT_ID')
+Freshworks::Account.retrieve('ACCOUNT_ID')
 ```
 
 Modify an account:
 ```Ruby
-account = Natero::Account.retrieve('ACCOUNT_ID')
+account = Freshworks::Account.retrieve('ACCOUNT_ID')
 account.name = 'TEST'
  
-Natero::Account.modify('ACCOUNT_ID', account)
+Freshworks::Account.modify('ACCOUNT_ID', account)
 ```
 
 Create an event:
 ```Ruby
 event   = { id: 'test', name: 'Testing the API.'}
-details = 'These details should be associated with the event in Natero'
+details = 'These details should be associated with the event in Freshworks'
  
-Natero::Event.create(event, details)
+Freshworks::Event.create(event, details)
 ```
 
 ## Contributing

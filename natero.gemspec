@@ -1,15 +1,15 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'natero/version'
+require 'freshworks/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'natero'
-  spec.version       = Natero::VERSION
-  spec.authors       = ['Andrew Brown', 'Robert Ingrum']
+  spec.name          = 'freshworks'
+  spec.version       = Freshworks::VERSION
+  spec.authors       = ['Ellen Cornelius', 'Nowai Matthew']
   spec.email         = 'dev@bonus.ly'
-  spec.summary       = 'Wrapper for Natero API'
-  spec.description   = 'Natero is customer success software used to reduce churn and increase B2B SaaS adoption.'
+  spec.summary       = 'Wrapper for Freshworks API'
+  spec.description   = 'Freshworks is customer success software used to reduce churn and increase B2B SaaS adoption.'
   spec.homepage      = 'http://bonus.ly'
   spec.license       = 'MIT'
 

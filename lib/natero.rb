@@ -1,7 +1,7 @@
 require 'httparty'
 require 'json'
 
-module Natero
+module Freshworks
   class Configuration
     attr_accessor :base_uri, :account_api_key, :event_api_key, :event_auth_key
 
@@ -34,7 +34,7 @@ module Natero
   end
 
   def self.api_key_uri
-    '?api_key=' + Natero.configuration.account_api_key
+    '?api_key=' + Freshworks.configuration.account_api_key
   end
 
   def self.to_records_json(objects)
@@ -46,11 +46,11 @@ module Natero
   end
 end
 
-require_relative 'natero/serializable'
-require_relative 'natero/request_helper'
-require_relative 'natero/base'
-require_relative 'natero/user'
-require_relative 'natero/account'
-require_relative 'natero/event'
-require_relative 'natero/response'
-require_relative 'natero/metric'
+require_relative 'freshworks/serializable'
+require_relative 'freshworks/request_helper'
+require_relative 'freshworks/base'
+require_relative 'freshworks/user'
+require_relative 'freshworks/account'
+require_relative 'freshworks/event'
+require_relative 'freshworks/response'
+require_relative 'freshworks/metric'

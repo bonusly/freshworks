@@ -5,5 +5,5 @@ RSpec::Core::RakeTask.new(:spec)
 
 # run console with gem loaded
 task :console do
-  exec "irb -r natero -I ./lib"
+  exec "irb -r freshworks -I ./lib"
 end

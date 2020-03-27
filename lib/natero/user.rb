@@ -1,4 +1,4 @@
-class Natero::User < Natero::Base
+class Freshworks::User < Freshworks::Base
   def self.retrieve_all
     get
   end
@@ -8,7 +8,7 @@ class Natero::User < Natero::Base
   end
 
   def self.bulk_insert_modify(accounts)
-    post([], json_data(Natero.to_records_json(accounts)))
+    post([], json_data(Freshworks.to_records_json(accounts)))
   end
 
   def self.modify(id, account)
