@@ -1,3 +1,3 @@
 module Freshworks
-  VERSION = '1.2.3'
+  VERSION = '1.0'
 end
