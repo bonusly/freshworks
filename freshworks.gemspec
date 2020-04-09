@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.version       = Freshworks::VERSION
   spec.authors       = ['Ellen Cornelius', 'Nowai Matthew', 'Andrew Brown', 'Robert Ingrum']
   spec.email         = 'dev@bonus.ly'
-  spec.summary       = 'Wrapper for Freshworks API'
+  spec.summary       = 'Wrapper for Freshworks API. Formerly known as Natero.'
   spec.description   = 'Freshworks is customer success software used to reduce churn and increase B2B SaaS adoption.'
   spec.homepage      = 'http://bonus.ly'
   spec.license       = 'MIT'
