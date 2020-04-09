@@ -6,7 +6,7 @@ require 'freshworks/version'
 Gem::Specification.new do |spec|
   spec.name          = 'freshworks'
   spec.version       = Freshworks::VERSION
-  spec.authors       = ['Ellen Cornelius', 'Nowai Matthew', 'Andrew Brown', 'Robert Ingrum']
+  spec.authors       = ['Andrew Brown', 'Robert Ingrum']
   spec.email         = 'dev@bonus.ly'
   spec.summary       = 'Wrapper for Freshworks API. Formerly known as Natero.'
   spec.description   = 'Freshworks is customer success software used to reduce churn and increase B2B SaaS adoption.'
