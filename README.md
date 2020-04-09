@@ -6,7 +6,7 @@
 [pr]:       http://help.github.com/send-pull-requests/
 
 # Freshworks Gem
-A Ruby interface for the [Freshworks Public API][api-docs].
+A Ruby interface for the [Freshworks Public API][api-docs]. Formerly known as [Natero](https://github.com/bonusly/natero).
 
 ## Installation
 ```Bash
