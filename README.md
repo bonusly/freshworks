@@ -40,7 +40,7 @@ Modify an account:
 ```Ruby
 account = Freshworks::Account.retrieve('ACCOUNT_ID')
 account.name = 'TEST'
- 
+
 Freshworks::Account.modify('ACCOUNT_ID', account)
 ```
 
@@ -48,7 +48,7 @@ Create an event:
 ```Ruby
 event   = { id: 'test', name: 'Testing the API.'}
 details = 'These details should be associated with the event in Freshworks'
- 
+
 Freshworks::Event.create(event, details)
 ```
 
@@ -67,7 +67,7 @@ improve this project. Here are some ways *you* can contribute:
 #### Submitting an issue:
 We use the [GitHub issue tracker][issues] to track bugs and features. Before
 submitting a bug report or feature request, check to make sure it hasn't
-already been submitted. When submitting a bug report, please include a stack 
+already been submitted. When submitting a bug report, please include a stack
 trace and any details that may be necessary to reproduce
 the bug, including your gem version, Ruby version, and operating system.
 Ideally, a bug report should include a pull request with failing specs.
@@ -84,3 +84,11 @@ Ideally, a bug report should include a pull request with failing specs.
 9. [Submit a pull request.][pr]
 
 _(Shamelessly based on the [Twitter Gem](https://github.com/sferik/twitter))_
+
+## About Bonusly
+
+![Bonusly Logo](https://bonusly-files.s3.amazonaws.com/bonusly-logo.png?small)
+
+Bonusly is the fun and easy way to engage all of your employees and improve retention and productivity at every level of your organization.
+
+Check out [our product](https://bonus.ly) or [our engineering blog](https://engineering.bonus.ly).
