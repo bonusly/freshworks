@@ -5,6 +5,9 @@
 [branch]:   http://learn.github.com/p/branching.html
 [pr]:       http://help.github.com/send-pull-requests/
 
+# Archived!?
+I'm afraid we no longer support this gem - but if you'd like to be the new maintainer, please feel free to reach out and we can transfer ownership.
+
 # Freshworks Gem
 A Ruby interface for the [Freshworks Public API][api-docs]. Formerly known as [Natero](https://github.com/bonusly/natero).
 
